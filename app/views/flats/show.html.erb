@@ -1,0 +1,13 @@
+<div class="showpage">
+<img src=<%= "https://source.unsplash.com/featured/?house?sig=123#{rand(0..5)}" %>>
+<h1>
+  <%= @flat.name %>
+</h1>
+<p>
+  Address: <%= @flat.address %> <br>
+  Description: <%= @flat.description %> <br>
+  Price per night: <%= @flat.price_per_night %> <br>
+  No of guests: <%= @flat.number_of_guests %> <br>
+</p>
+<%= link_to "Home", flats_path %>
+</div>

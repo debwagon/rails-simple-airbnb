@@ -1,0 +1,28 @@
+<h1>Airbnb Test</h1>
+<br>
+<%= link_to "Create new flat", new_flat_path  %>
+
+<% @flats.each_with_index do |f, i| %>
+
+    <div class="card-trip">
+      <img src=<%= "https://source.unsplash.com/featured/?house?sig=123#{i}" %>>
+      <div class="card-body">
+        <div class="card-trip-info">
+          <!-- <h2>Title here</h2> -->
+          <h2><%= f.name %></h2>
+
+          <!-- <p>Short description here!</p> -->
+          <p><%= f.address %></p>
+        </div>
+        <!-- <h2>$99.99</h2> -->
+        <div class="card-footer">
+          <%= link_to "Description", flat_path(f), class:"small"  %>
+          <p>$<%= f.price_per_night %></p>
+
+        </div>
+        <%= link_to "delete", flat_path(f), method: :delete,
+        data: { confirm: "Confirm deletion?" } %>
+      </div>
+    </div>
+
+<% end %>

@@ -1,0 +1,45 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.card-trip img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-trip {
+  // height: 420px;
+  width: 560px;
+  border-radius: 8px;
+  /*border: 1px solid black;*/
+  margin: 16px;
+  overflow: hidden;
+  // box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  // padding: 0px 20px;
+  border: 1px solid black;
+}
+
+.card-trip-price {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  padding: 16px;
+}
+
+.showpage img {
+  height: 250px;
+  width: 400px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.small {
+  font-size: 18px;
+}
+
